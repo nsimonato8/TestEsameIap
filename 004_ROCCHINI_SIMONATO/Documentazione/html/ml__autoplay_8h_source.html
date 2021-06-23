@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MiniLaska:  File sorgente /home/niccolo/Scaricati/Prog/004_ROCCHINI_SIMONATO/Codice Sorgente/ml_autoplay.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MiniLaska
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_57d2f95f8af5f564ff6b49fa42e859eb.html">Codice Sorgente</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ml_autoplay.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ml__autoplay_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;stdio.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;limits.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="ml__lib_8h.html">ml_lib.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define NUMERO_PEDINE 7</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define MOSSE 8</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="ml__autoplay_8h.html#a3f46128da7b9ed932ecb00df9677e301">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__node.html">s_node</a> <a class="code" href="structs__node.html">t_node</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="ml__autoplay_8h.html#a2c7d5445b1cc743c3ba0a054b04559c4">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__node__list.html">s_node_list</a> *<a class="code" href="ml__autoplay_8h.html#a2c7d5445b1cc743c3ba0a054b04559c4">t_node_list</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="ml__autoplay_8h.html#a4b97eb97db2365148a5c3a5070f0cdd1">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="ml__autoplay_8h.html#a4b97eb97db2365148a5c3a5070f0cdd1">mod</a> {MIN, MAX} <a class="code" href="ml__autoplay_8h.html#a2a5b40289f6fafabc17ca8ef5db14070">mode</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*alfa -&gt; [-1,1]*/</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structs__node.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structs__node.html">s_node</a> { <span class="comment">/*coppia valore,mossa*/</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="structpunto.html">point</a> start;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="structpunto.html">point</a> end;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> value;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structs__node__list.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structs__node__list.html">s_node_list</a> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="structs__node.html">t_node</a> data;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    t_node_list next;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ml__autoplay_8h.html#afb196dfa912887a9d6deebbec6dacfde">catchInput_Autoplay</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <span class="keywordtype">int</span> turn, <span class="keywordtype">int</span> depth);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ml__autoplay_8h.html#a9c6aa7ebae169d372e643db2c28b4555">can_be_eaten</a>(<a class="code" href="structcella.html">pedina</a> **board, <a class="code" href="structpunto.html">point</a> p);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ml__autoplay_8h.html#adda300b56a27381dec16da8891d8c2d4">evaluate</a>(<a class="code" href="structcella.html">pedina</a> **board);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ml__autoplay_8h.html#aa434d88621f2b5514f99e17ffaadfd5b">print_t_node</a>(<a class="code" href="structs__node.html">t_node</a> t);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ml__autoplay_8h.html#ad21eb4909ab1c3d08bd8af2d4bc5a7a7">print_list</a>(t_node_list i);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ml__autoplay_8h.html#a30189b8f3988a507ca2c368b03ff3a46">prepend</a>(t_node_list *l, <a class="code" href="structs__node.html">t_node</a> val);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ml__autoplay_8h.html#addc0aeed0f8c87521bec3564f23aa20f">destroy_list</a>(t_node_list l);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ml__autoplay_8h.html#a145d0e2cb7d163cf81ac1a6576fcc867">append</a>(t_node_list *l, <a class="code" href="structs__node.html">t_node</a> val);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="structs__node.html">t_node</a> <a class="code" href="ml__autoplay_8h.html#ad91c25fcffb5554e913beac89907bf2d">get_from_list</a>(t_node_list l, <a class="code" href="ml__autoplay_8h.html#a2a5b40289f6fafabc17ca8ef5db14070">mode</a> x);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="code" href="structpunto.html">point</a>* <a class="code" href="ml__autoplay_8h.html#adf3d205b5be0c4b5111c7a5842d35fe1">get_dir</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;t_node_list <a class="code" href="ml__autoplay_8h.html#a322f2a61d1002e217404485376dc71a6">get_moves</a>(<a class="code" href="structcella.html">pedina</a> **board, <span class="keywordtype">int</span> turn);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ml__autoplay_8h.html#a2dde1a738d42f10de8ca818976b53635">minimax</a>(<a class="code" href="structcella.html">pedina</a> **board, <a class="code" href="structs__node.html">t_node</a> move, <span class="keywordtype">int</span> depth, <span class="keywordtype">int</span> turn);</div><div class="ttc" id="ml__autoplay_8h_html_ad21eb4909ab1c3d08bd8af2d4bc5a7a7"><div class="ttname"><a href="ml__autoplay_8h.html#ad21eb4909ab1c3d08bd8af2d4bc5a7a7">print_list</a></div><div class="ttdeci">void print_list(t_node_list i)</div><div class="ttdoc">Esegue una stampa della lista in input. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:110</div></div>
+<div class="ttc" id="ml__main_8c_html_a62a3fe3d1df9ff58883b669f7f24e516"><div class="ttname"><a href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a></div><div class="ttdeci">pedina ** board</div><div class="ttdef"><b>Definition:</b> ml_main.c:11</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a2a5b40289f6fafabc17ca8ef5db14070"><div class="ttname"><a href="ml__autoplay_8h.html#a2a5b40289f6fafabc17ca8ef5db14070">mode</a></div><div class="ttdeci">enum mod mode</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a322f2a61d1002e217404485376dc71a6"><div class="ttname"><a href="ml__autoplay_8h.html#a322f2a61d1002e217404485376dc71a6">get_moves</a></div><div class="ttdeci">t_node_list get_moves(pedina **board, int turn)</div><div class="ttdoc">Ritorna una lista con le possibili mosse. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:195</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a2dde1a738d42f10de8ca818976b53635"><div class="ttname"><a href="ml__autoplay_8h.html#a2dde1a738d42f10de8ca818976b53635">minimax</a></div><div class="ttdeci">int minimax(pedina **board, t_node move, int depth, int turn)</div><div class="ttdoc">Ritorna una lista con le possibili mosse. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:244</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_adf3d205b5be0c4b5111c7a5842d35fe1"><div class="ttname"><a href="ml__autoplay_8h.html#adf3d205b5be0c4b5111c7a5842d35fe1">get_dir</a></div><div class="ttdeci">point * get_dir(void)</div><div class="ttdoc">Ritorna la direzione della pedina. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:162</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_ad91c25fcffb5554e913beac89907bf2d"><div class="ttname"><a href="ml__autoplay_8h.html#ad91c25fcffb5554e913beac89907bf2d">get_from_list</a></div><div class="ttdeci">t_node get_from_list(t_node_list l, mode x)</div><div class="ttdoc">Ottiene l&amp;#39;elemento che ha valore x. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:146</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_afb196dfa912887a9d6deebbec6dacfde"><div class="ttname"><a href="ml__autoplay_8h.html#afb196dfa912887a9d6deebbec6dacfde">catchInput_Autoplay</a></div><div class="ttdeci">int catchInput_Autoplay(pedina **board, int turn, int depth)</div><div class="ttdoc">Acquisice input modalità Player vs CPU. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:16</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_addc0aeed0f8c87521bec3564f23aa20f"><div class="ttname"><a href="ml__autoplay_8h.html#addc0aeed0f8c87521bec3564f23aa20f">destroy_list</a></div><div class="ttdeci">void destroy_list(t_node_list l)</div><div class="ttdoc">Esegue la distruzione della lista. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:132</div></div>
+<div class="ttc" id="structs__node_html"><div class="ttname"><a href="structs__node.html">s_node</a></div><div class="ttdef"><b>Definition:</b> ml_autoplay.h:26</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_aa434d88621f2b5514f99e17ffaadfd5b"><div class="ttname"><a href="ml__autoplay_8h.html#aa434d88621f2b5514f99e17ffaadfd5b">print_t_node</a></div><div class="ttdeci">void print_t_node(t_node t)</div><div class="ttdoc">Esegue una stampa dell&amp;#39;oggetto in input. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:106</div></div>
+<div class="ttc" id="ml__lib_8h_html"><div class="ttname"><a href="ml__lib_8h.html">ml_lib.h</a></div><div class="ttdoc">Header della libreria ml_lib. </div></div>
+<div class="ttc" id="ml__autoplay_8h_html_adda300b56a27381dec16da8891d8c2d4"><div class="ttname"><a href="ml__autoplay_8h.html#adda300b56a27381dec16da8891d8c2d4">evaluate</a></div><div class="ttdeci">int evaluate(pedina **board)</div><div class="ttdoc">Esegue una valutazione euristica del valore di minmax. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:78</div></div>
+<div class="ttc" id="structs__node__list_html"><div class="ttname"><a href="structs__node__list.html">s_node_list</a></div><div class="ttdef"><b>Definition:</b> ml_autoplay.h:33</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a30189b8f3988a507ca2c368b03ff3a46"><div class="ttname"><a href="ml__autoplay_8h.html#a30189b8f3988a507ca2c368b03ff3a46">prepend</a></div><div class="ttdeci">int prepend(t_node_list *l, t_node val)</div><div class="ttdoc">Esegue un&amp;#39;aggiunta di un elemento in testa. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:118</div></div>
+<div class="ttc" id="structcella_html"><div class="ttname"><a href="structcella.html">cella</a></div><div class="ttdef"><b>Definition:</b> ml_lib.h:32</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a9c6aa7ebae169d372e643db2c28b4555"><div class="ttname"><a href="ml__autoplay_8h.html#a9c6aa7ebae169d372e643db2c28b4555">can_be_eaten</a></div><div class="ttdeci">int can_be_eaten(pedina **board, point p)</div><div class="ttdoc">Verifica se pedina può essere mangiata. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:40</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a4b97eb97db2365148a5c3a5070f0cdd1"><div class="ttname"><a href="ml__autoplay_8h.html#a4b97eb97db2365148a5c3a5070f0cdd1">mod</a></div><div class="ttdeci">mod</div><div class="ttdef"><b>Definition:</b> ml_autoplay.h:21</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a145d0e2cb7d163cf81ac1a6576fcc867"><div class="ttname"><a href="ml__autoplay_8h.html#a145d0e2cb7d163cf81ac1a6576fcc867">append</a></div><div class="ttdeci">int append(t_node_list *l, t_node val)</div><div class="ttdoc">Esegue un&amp;#39;aggiunta di un elemento in coda. </div><div class="ttdef"><b>Definition:</b> ml_autoplay.c:139</div></div>
+<div class="ttc" id="structpunto_html"><div class="ttname"><a href="structpunto.html">punto</a></div><div class="ttdef"><b>Definition:</b> ml_lib.h:40</div></div>
+<div class="ttc" id="ml__autoplay_8h_html_a2c7d5445b1cc743c3ba0a054b04559c4"><div class="ttname"><a href="ml__autoplay_8h.html#a2c7d5445b1cc743c3ba0a054b04559c4">t_node_list</a></div><div class="ttdeci">struct s_node_list * t_node_list</div><div class="ttdef"><b>Definition:</b> ml_autoplay.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

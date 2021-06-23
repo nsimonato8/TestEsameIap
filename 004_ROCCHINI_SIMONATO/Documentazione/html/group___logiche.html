@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MiniLaska: Funzioni delle logiche di gioco</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MiniLaska
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Funzioni delle logiche di gioco</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga1d493fc60e6ea052243bc1c0e0c20adc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga1d493fc60e6ea052243bc1c0e0c20adc">is_same_team</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> a, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> b)</td></tr>
+<tr class="memdesc:ga1d493fc60e6ea052243bc1c0e0c20adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che due pedine siano della stessa squadra.  <a href="#ga1d493fc60e6ea052243bc1c0e0c20adc">Continua...</a><br /></td></tr>
+<tr class="separator:ga1d493fc60e6ea052243bc1c0e0c20adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bbb95ac94db737e2095fc03a7eb2cef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga9bbb95ac94db737e2095fc03a7eb2cef">is_legal_player</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, int turn)</td></tr>
+<tr class="memdesc:ga9bbb95ac94db737e2095fc03a7eb2cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che il giocatore sia corretto.  <a href="#ga9bbb95ac94db737e2095fc03a7eb2cef">Continua...</a><br /></td></tr>
+<tr class="separator:ga9bbb95ac94db737e2095fc03a7eb2cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0519397afc131ba8216279b7c8d6c5cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga0519397afc131ba8216279b7c8d6c5cc">is_empty</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> x)</td></tr>
+<tr class="memdesc:ga0519397afc131ba8216279b7c8d6c5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che casella sia vuota.  <a href="#ga0519397afc131ba8216279b7c8d6c5cc">Continua...</a><br /></td></tr>
+<tr class="separator:ga0519397afc131ba8216279b7c8d6c5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7e726a728c55ba691bb6c1462c71989"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#gae7e726a728c55ba691bb6c1462c71989">is_full</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> x)</td></tr>
+<tr class="memdesc:gae7e726a728c55ba691bb6c1462c71989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che casella sia piena.  <a href="#gae7e726a728c55ba691bb6c1462c71989">Continua...</a><br /></td></tr>
+<tr class="separator:gae7e726a728c55ba691bb6c1462c71989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad76287dc287b54276099f0887d416caa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#gad76287dc287b54276099f0887d416caa">is_valid_distance</a> (<a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to)</td></tr>
+<tr class="memdesc:gad76287dc287b54276099f0887d416caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che la validità della lunghezza della mossa.  <a href="#gad76287dc287b54276099f0887d416caa">Continua...</a><br /></td></tr>
+<tr class="separator:gad76287dc287b54276099f0887d416caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga344630622a81e477d50fe7824da45500"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga344630622a81e477d50fe7824da45500">is_valid_move</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to, int turn)</td></tr>
+<tr class="memdesc:ga344630622a81e477d50fe7824da45500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che la mossa selezionata sia legale.  <a href="#ga344630622a81e477d50fe7824da45500">Continua...</a><br /></td></tr>
+<tr class="separator:ga344630622a81e477d50fe7824da45500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga849f32b6994fbb1190073cde39703ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga849f32b6994fbb1190073cde39703ee4">increase_grade</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> soldier)</td></tr>
+<tr class="memdesc:ga849f32b6994fbb1190073cde39703ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che la pedina soldier sia sa promuovere.  <a href="#ga849f32b6994fbb1190073cde39703ee4">Continua...</a><br /></td></tr>
+<tr class="separator:ga849f32b6994fbb1190073cde39703ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b5b57b74dd64318663e80224db22a29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga0b5b57b74dd64318663e80224db22a29">isWinner</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> player)</td></tr>
+<tr class="memdesc:ga0b5b57b74dd64318663e80224db22a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che il giocatore <em>player</em> abbia vinto.  <a href="#ga0b5b57b74dd64318663e80224db22a29">Continua...</a><br /></td></tr>
+<tr class="separator:ga0b5b57b74dd64318663e80224db22a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ca66b4e8b4e7f4511943aac8edde162"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga8ca66b4e8b4e7f4511943aac8edde162">isForbiddenCell</a> (<a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> p)</td></tr>
+<tr class="memdesc:ga8ca66b4e8b4e7f4511943aac8edde162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che la cella sia accessibile.  <a href="#ga8ca66b4e8b4e7f4511943aac8edde162">Continua...</a><br /></td></tr>
+<tr class="separator:ga8ca66b4e8b4e7f4511943aac8edde162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0ab070447e0245797db89513aac7464"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#gac0ab070447e0245797db89513aac7464">my_move</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to, int turn)</td></tr>
+<tr class="memdesc:gac0ab070447e0245797db89513aac7464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che la mossa selezionata sia legale e la esegue.  <a href="#gac0ab070447e0245797db89513aac7464">Continua...</a><br /></td></tr>
+<tr class="separator:gac0ab070447e0245797db89513aac7464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcbd7b41508ab908b601d6607330190f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#gabcbd7b41508ab908b601d6607330190f">distance</a> (<a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to)</td></tr>
+<tr class="memdesc:gabcbd7b41508ab908b601d6607330190f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restituisce un codice che descrive la lunghezza della mossa.  <a href="#gabcbd7b41508ab908b601d6607330190f">Continua...</a><br /></td></tr>
+<tr class="separator:gabcbd7b41508ab908b601d6607330190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga373ce247f8d712b22dd6db6b5aaeb77c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga373ce247f8d712b22dd6db6b5aaeb77c">capture</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to)</td></tr>
+<tr class="memdesc:ga373ce247f8d712b22dd6db6b5aaeb77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esegue la cattura delle pedine.  <a href="#ga373ce247f8d712b22dd6db6b5aaeb77c">Continua...</a><br /></td></tr>
+<tr class="separator:ga373ce247f8d712b22dd6db6b5aaeb77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92e065216878c6972f25bb40cede5a3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga92e065216878c6972f25bb40cede5a3f">gradeCheck</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to)</td></tr>
+<tr class="memdesc:ga92e065216878c6972f25bb40cede5a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica che la mossa selezionata sia compatibile con il grado della pedina.  <a href="#ga92e065216878c6972f25bb40cede5a3f">Continua...</a><br /></td></tr>
+<tr class="separator:ga92e065216878c6972f25bb40cede5a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae47a85e51124bf1b5569559ba5718bb6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#gae47a85e51124bf1b5569559ba5718bb6">can_eat</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> p)</td></tr>
+<tr class="memdesc:gae47a85e51124bf1b5569559ba5718bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica la possibilità di mangiare.  <a href="#gae47a85e51124bf1b5569559ba5718bb6">Continua...</a><br /></td></tr>
+<tr class="separator:gae47a85e51124bf1b5569559ba5718bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cc7e93c7f87a22d21412b3ca1f942e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#ga8cc7e93c7f87a22d21412b3ca1f942e6">can_move</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> p)</td></tr>
+<tr class="memdesc:ga8cc7e93c7f87a22d21412b3ca1f942e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica la possibilità di muoversi.  <a href="#ga8cc7e93c7f87a22d21412b3ca1f942e6">Continua...</a><br /></td></tr>
+<tr class="separator:ga8cc7e93c7f87a22d21412b3ca1f942e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5deae59415fab0cf7de74362d4b56e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___logiche.html#gaf5deae59415fab0cf7de74362d4b56e6">existMandatory</a> (<a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **<a class="el" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> from, <a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a> to)</td></tr>
+<tr class="memdesc:gaf5deae59415fab0cf7de74362d4b56e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controlla la presenza di mosse obbligatorie.  <a href="#gaf5deae59415fab0cf7de74362d4b56e6">Continua...</a><br /></td></tr>
+<tr class="separator:gaf5deae59415fab0cf7de74362d4b56e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a id="gae47a85e51124bf1b5569559ba5718bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae47a85e51124bf1b5569559ba5718bb6">&#9670;&nbsp;</a></span>can_eat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int can_eat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica la possibilità di mangiare. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">p</td><td>punto in cui si trova la pedina nella scacchiera</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Verifica la possibilità della pedina in <em>x</em> , <em>y</em> di mangiare le pedine avversarie intorno a sé </p>
+
+</div>
+</div>
+<a id="ga8cc7e93c7f87a22d21412b3ca1f942e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8cc7e93c7f87a22d21412b3ca1f942e6">&#9670;&nbsp;</a></span>can_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int can_move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica la possibilità di muoversi. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">p</td><td>punto in cui si trova la pedina nella scacchiera</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Verifica la possibilità della pedina in <em>x</em> , <em>y</em> di muoversi nelle caselle adiacenti </p>
+
+</div>
+</div>
+<a id="ga373ce247f8d712b22dd6db6b5aaeb77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga373ce247f8d712b22dd6db6b5aaeb77c">&#9670;&nbsp;</a></span>capture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void capture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Esegue la cattura delle pedine. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Questa funzione si occupa di catturare le pedine indicate. Si assume la correttezza delle coordinate inserite, la legalità della mossa è verificata nella funzione move(). </p>
+
+</div>
+</div>
+<a id="gabcbd7b41508ab908b601d6607330190f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcbd7b41508ab908b601d6607330190f">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int distance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restituisce un codice che descrive la lunghezza della mossa. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce la distanza in modulo tra due punti nella matrice: Se è maggiore di 2, uguale a 0, o la destinazione è in una casella non accessibile restituisce il codice errore -1.</p>
+<p>Le coordinate inserite sono corrette (la destinazione non è una casella proibita). </p>
+
+</div>
+</div>
+<a id="gaf5deae59415fab0cf7de74362d4b56e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5deae59415fab0cf7de74362d4b56e6">&#9670;&nbsp;</a></span>existMandatory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int existMandatory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controlla la presenza di mosse obbligatorie. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Verifica se, nel caso di non cattura, esiste una cattura obbligatoria da fare. Restituisce 1 se esiste una mossa obbligatoria non tentata, altrimenti 0. </p>
+
+</div>
+</div>
+<a id="ga92e065216878c6972f25bb40cede5a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92e065216878c6972f25bb40cede5a3f">&#9670;&nbsp;</a></span>gradeCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gradeCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che la mossa selezionata sia compatibile con il grado della pedina. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Verifica il grado della pedina mossa: restituisce 1 se la mossa è consentita, 0 se non è consentita. </p>
+
+</div>
+</div>
+<a id="ga849f32b6994fbb1190073cde39703ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga849f32b6994fbb1190073cde39703ee4">&#9670;&nbsp;</a></span>increase_grade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void increase_grade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>soldier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che la pedina soldier sia sa promuovere. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">soldier</td><td>pedina candidata alla promozione</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Se la pedina soldier è nella condizione di essere promossa la promuove </p>
+
+</div>
+</div>
+<a id="ga0519397afc131ba8216279b7c8d6c5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0519397afc131ba8216279b7c8d6c5cc">&#9670;&nbsp;</a></span>is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che casella sia vuota. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">x</td><td>punto di arrivo della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se la casella è vuota, 0 altrimenti. </p>
+
+</div>
+</div>
+<a id="gae7e726a728c55ba691bb6c1462c71989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7e726a728c55ba691bb6c1462c71989">&#9670;&nbsp;</a></span>is_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che casella sia piena. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">x</td><td>punto di partenza della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se la casella è piena, 0 altrimenti. </p>
+
+</div>
+</div>
+<a id="ga9bbb95ac94db737e2095fc03a7eb2cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9bbb95ac94db737e2095fc03a7eb2cef">&#9670;&nbsp;</a></span>is_legal_player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_legal_player </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>turn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che il giocatore sia corretto. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">turn</td><td>numero del turno corrente</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se il giocatore che muove è abilitato a farlo, 0 altrimenti. </p>
+
+</div>
+</div>
+<a id="ga1d493fc60e6ea052243bc1c0e0c20adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d493fc60e6ea052243bc1c0e0c20adc">&#9670;&nbsp;</a></span>is_same_team()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_same_team </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che due pedine siano della stessa squadra. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">a</td><td>prima pedina </td></tr>
+    <tr><td class="paramname">b</td><td>seconda pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se le due pedine a e appartengono alla stessa squadra </p>
+
+</div>
+</div>
+<a id="gad76287dc287b54276099f0887d416caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad76287dc287b54276099f0887d416caa">&#9670;&nbsp;</a></span>is_valid_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_valid_distance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che la validità della lunghezza della mossa. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se la distanza della mossa è valida, 0 altrimenti. </p>
+
+</div>
+</div>
+<a id="ga344630622a81e477d50fe7824da45500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga344630622a81e477d50fe7824da45500">&#9670;&nbsp;</a></span>is_valid_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_valid_move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>turn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che la mossa selezionata sia legale. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina </td></tr>
+    <tr><td class="paramname">turn</td><td>numero del turno corrente</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se la mossa from-&gt;to è valida, 0 altrimenti. </p>
+
+</div>
+</div>
+<a id="ga8ca66b4e8b4e7f4511943aac8edde162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ca66b4e8b4e7f4511943aac8edde162">&#9670;&nbsp;</a></span>isForbiddenCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isForbiddenCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che la cella sia accessibile. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>punto in cui si trova la pedina nella scacchiera</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se la cella non è accessibile (si possono usare solo le celle bianche della scacchiera), altrimenti 0. </p>
+
+</div>
+</div>
+<a id="ga0b5b57b74dd64318663e80224db22a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b5b57b74dd64318663e80224db22a29">&#9670;&nbsp;</a></span>isWinner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isWinner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a>&#160;</td>
+          <td class="paramname"><em>idPlayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che il giocatore <em>player</em> abbia vinto. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">player</td><td>giocatore selezionato</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Verifica che playertore <em>idPlayer</em> abbia vinto. Restituisce 1 se idPlayer ha vinto, altrimenti 0. </p>
+
+</div>
+</div>
+<a id="gac0ab070447e0245797db89513aac7464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0ab070447e0245797db89513aac7464">&#9670;&nbsp;</a></span>my_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int my_move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">pedina</a> **&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ml__lib_8h.html#a451dd2984edbf81c9db421e898b39ef9">point</a>&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>turn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica che la mossa selezionata sia legale e la esegue. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>matrice linearizzata della scacchiera </td></tr>
+    <tr><td class="paramname">from</td><td>punto di partenza della pedina </td></tr>
+    <tr><td class="paramname">to</td><td>punto di arrivo della pedina </td></tr>
+    <tr><td class="paramname">turn</td><td>numero del turno corrente</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Restituisce 1 se la mossa è stata fatta, 0 se non è stato possibile. Le coordinate inserite sono corrette in fase di input (sono all'interno della scacchiera e non sono caselle proibite). Verifica che la distanza ed il grado siano compatibili con la mossa. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
